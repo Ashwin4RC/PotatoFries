@@ -19,7 +19,7 @@ final Map<String, dynamic> sbicon = {
   'double_tap_sleep_gesture': {
     'title': 'DT2S',
     'subtitle': 'Double-tap status bar to put the device to sleep',
-        'widget': WidgetType.SWITCH,
+    'widget': WidgetType.SWITCH,
     'setting_type': SettingType.SYSTEM,
     'widget_data': {
       'default': true,

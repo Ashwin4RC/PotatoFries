@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:potato_fries/widgets/directory.dart';
 
 final Map<String, dynamic> lockScreen = {
-  'Always-On-Display': aod,
+  'Lockscreen album art': lsart,
 };
 
-final Map<String, dynamic> aod = {
-  'doze_on_charge': {
-    'title': 'Always on Charging',
-    'subtitle': 'Show Always On Ambient display when charging',
+final Map<String, dynamic> lsart = {
+  'lockscreen_media_metadata': {
+    'title': 'Lockscreen Media Art',
+    'subtitle': 'Show Album Art on lockscreen',
     'widget': WidgetType.SWITCH,
     'setting_type': SettingType.SYSTEM,
     'widget_data': {
-      'default': false,
+      'default': true,
     }
   },
 };

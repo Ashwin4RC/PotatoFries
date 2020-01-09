@@ -3,6 +3,7 @@ import 'package:potato_fries/data/app.dart';
 import 'package:potato_fries/provider/app_info.dart';
 import 'package:potato_fries/provider/lock_screen.dart';
 import 'package:potato_fries/provider/qs.dart';
+import 'package:potato_fries/provider/status_bar.dart';
 import 'package:potato_fries/provider/themes.dart';
 import 'package:potato_fries/utils/methods.dart';
 import 'package:potato_fries/utils/obj_gen.dart';
@@ -58,6 +59,9 @@ class PageParser extends StatelessWidget {
                     break;
                   case 'lock_screen':
                     provider = Provider.of<LockScreenDataProvider>(context);
+                    break;
+                  case 'status_bar':
+                    provider = Provider.of<StatusBarDataProvider>(context);
                     break;
                 }
                 var appInfoProvider = Provider.of<AppInfoProvider>(context);

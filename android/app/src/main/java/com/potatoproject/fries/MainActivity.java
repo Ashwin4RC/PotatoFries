@@ -1,4 +1,4 @@
-package co.potatoproject.fries;
+package com.potatoproject.fries;
 
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
